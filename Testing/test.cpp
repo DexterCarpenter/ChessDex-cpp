@@ -1,5 +1,6 @@
 #include <cassert>
 #include <iostream>
+#include <cstring>
 
 #include "../src/board/board.h"
 
@@ -12,10 +13,10 @@ int main() {
     assert(RANK_OF[E3] == '3');
     assert(isLightSquare(A1) == false);
     assert(isLightSquare(B7) == true);
-    assert(PIECE_SYMBOL[WHITE][PAWN] == "♙");
-    assert(PIECE_SYMBOL[BLACK][QUEEN] == "♛");
-    assert(SQUARE_SYMBOL[WHITE] == "◻");
-    assert(SQUARE_SYMBOL[BLACK] == "◼");
+    assert(strcmp(PIECE_SYMBOL[WHITE][PAWN],  "♙") == 0);
+    assert(strcmp(PIECE_SYMBOL[BLACK][QUEEN], "♛") == 0);
+    assert(strcmp(SQUARE_SYMBOL[WHITE],       "◻") == 0);
+    assert(strcmp(SQUARE_SYMBOL[BLACK],       "◼") == 0);
 
     /* ========== PIECE TESTS ========== */
     Piece white_pawn(WHITE, PAWN);
