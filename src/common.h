@@ -72,7 +72,7 @@ constexpr bool isLightSquare(E_SQUARE sq)
     int file = static_cast<int>(sq) % 8;
     int rank = static_cast<int>(sq) / 8;
 
-    return (file + rank) % 2 == 0;
+    return (file + rank) % 2 != 0;
 }
 
 constexpr std::array<const char*, 6> PIECE_SAN_LETTER = {
