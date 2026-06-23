@@ -64,7 +64,7 @@ vcpkg_installed/
 *.dwo
 
 # test output & cache
-Testing/
+Testing/Temporary/
 .cache/
 
 # main compiled binary
