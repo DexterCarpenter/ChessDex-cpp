@@ -3,10 +3,9 @@
 #include "board/board.h"
 #include "engine/engine.h"
 
-using namespace std;
-
 int main() {
+  Board board = Board();
+  Move move = Move(A2, A4, PAWN);
   
-  cout << "Hello World!\n";
   return 0;
 }
